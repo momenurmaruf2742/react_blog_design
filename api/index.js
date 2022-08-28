@@ -6,8 +6,8 @@ const authRoute = require("./routes/auth");
 
 dotenv.config();
 app.use(express.json());
-const MONGO_URL = 'mongodb+srv://maruf:maruf@cluster0.cfivetg.mongodb.net/blog?retryWrites=true&w=majority'
-mongoose.connect(MONGO_URL,
+
+mongoose.connect(process.env.MONGO_URL,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true
