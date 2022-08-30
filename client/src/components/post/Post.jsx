@@ -1,6 +1,6 @@
 import "./post.css"
 
-export default function Post() {
+export default function Post({post}) {
   return (
     <div className="post">
         <img className="postImg" src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg" alt="" />
@@ -10,8 +10,7 @@ export default function Post() {
                 <span className="postCat">Music</span>
                 <span className="postCat">Life</span>
             </div>
-            <span className="postTitle">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur voluptatum amet facere laboriosam,
+            <span className="postTitle">{post.title}
             </span>
             <hr/>
             <span className="postDate">1 houre ago</span>
