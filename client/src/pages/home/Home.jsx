@@ -4,6 +4,14 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import "./home.css"
 
 export default function Home() {
+  const [posts,setPosts] = useState([])
+
+  useEffect(() => {
+    const fetchPosts= async
+    return () => {
+      cleanup
+    };
+  }, []);
   return (
     
         <>
